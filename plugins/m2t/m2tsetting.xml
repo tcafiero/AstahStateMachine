@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<settingManager>
+    <currentSetting>
+        <mapping>
+            <fileName>Sketch.ino</fileName>
+            <templateFile>arduino.template</templateFile>
+            <templateType>Global</templateType>
+        </mapping>
+        <mapping>
+            <fileExtension>h</fileExtension>
+            <templateFile>header.template</templateFile>
+            <templateType>Default</templateType>
+        </mapping>
+        <mapping>
+            <fileExtension>cpp</fileExtension>
+            <templateFile>cpp.template</templateFile>
+            <templateType>Default</templateType>
+        </mapping>
+        <targetPath>C:\Documents and Settings\user\Sketch</targetPath>
+        <templateID>toni</templateID>
+        <templatePath>C:\Documents and Settings\user\.astah\plugins\m2t\templates\Arduino</templatePath>
+    </currentSetting>
+    <m2tPluginFolderPath>C:\Documents and Settings\user/.astah/plugins/m2t/</m2tPluginFolderPath>
+    <map>
+        <entry>
+            <key>toni</key>
+            <value>
+                <mapping>
+                    <fileName>Sketch.ino</fileName>
+                    <templateFile>arduino.template</templateFile>
+                    <templateType>Global</templateType>
+                </mapping>
+                <mapping>
+                    <fileExtension>h</fileExtension>
+                    <templateFile>header.template</templateFile>
+                    <templateType>Default</templateType>
+                </mapping>
+                <mapping>
+                    <fileExtension>cpp</fileExtension>
+                    <templateFile>cpp.template</templateFile>
+                    <templateType>Default</templateType>
+                </mapping>
+                <targetPath>C:\Documents and Settings\user\Sketch</targetPath>
+                <templateID>toni</templateID>
+                <templatePath>C:\Documents and Settings\user\.astah\plugins\m2t\templates\Arduino</templatePath>
+            </value>
+        </entry>
+        <entry>
+            <key>grsakura1</key>
+            <value>
+                <mapping>
+                    <fileExtension>h</fileExtension>
+                    <templateFile>header.template</templateFile>
+                    <templateType>Default</templateType>
+                </mapping>
+                <mapping>
+                    <fileExtension>cpp</fileExtension>
+                    <templateFile>cpp.template</templateFile>
+                    <templateType>Default</templateType>
+                </mapping>
+                <targetPath>C:\Documents and Settings\user</targetPath>
+                <templateEngine>Groovy</templateEngine>
+                <templateID>grsakura</templateID>
+                <templatePath>C:\Documents and Settings\user\.astah\plugins\m2t\templates\grsakura</templatePath>
+            </value>
+        </entry>
+        <entry>
+            <key>grsakura</key>
+            <value>
+                <mapping>
+                    <fileExtension>cpp</fileExtension>
+                    <templateFile>cpp.template</templateFile>
+                    <templateType>Default</templateType>
+                </mapping>
+                <mapping>
+                    <fileExtension>h</fileExtension>
+                    <templateFile>header.template</templateFile>
+                    <templateType>Default</templateType>
+                </mapping>
+                <targetPath>C:\Documents and Settings\user</targetPath>
+                <templateEngine>Groovy</templateEngine>
+                <templateID>grsakura</templateID>
+                <templatePath>C:\Documents and Settings\user\.astah\plugins\m2t\templates\grsakura</templatePath>
+            </value>
+        </entry>
+    </map>
+    <settingFilePath>C:\Documents and Settings\user/.astah/plugins/m2t/m2tsetting.xml</settingFilePath>
+</settingManager>

@@ -1,0 +1,47 @@
+#include "Arduino.h"
+#include "generic.h"
+
+<% for(c in u.classes){ %>\
+#include "${c.name}.h"
+<%}%>\
+#include "SimpleFIFO.h"
+
+<% for(c in u.classes){ %>\
+extern SimpleFIFO<enum ${c.name}::Event_T,10> ${c.name}Mailbox; //store 10 ints
+<%}%>\
+
+
+<% for(c in u.classes){ %>\
+${c.name} *${u.getInstanceName(c)};
+<%}%>\
+
+void setup()
+{
+	StartupCode();
+<% for(c in u.classes){ %>\
+	${u.getInstanceName(c)} = ${c.name}::getInstance();
+<%}%>\
+<% for(c in u.classes){%>\
+<%if(u.statemachines.get(c)){%>\
+  ${u.getInstanceName(c)}->transition(${c.name}::Reset);
+<%}%>\
+<%}%>\
+
+}
+
+void loop()
+{
+<% for(c in u.classes){%>\
+<%if(u.statemachines.get(c)){%>\
+	if(${c.name}Mailbox.count()) ${u.getInstanceName(c)}->transition(${c.name}Mailbox.receive());
+  	else ${u.getInstanceName(c)}->transition(${c.name}::None);
+	if(!counter) ${u.getInstanceName(c)}->transition(${c.name}::Click);
+<%}%>\
+<%}%>\
+<% for(c in u.classes){%>\
+<%if(u.statemachines.get(c)){%>\
+  ${u.getInstanceName(c)}->doAction();
+<%}%>\
+<%}%>\
+  delay(tic);
+}
